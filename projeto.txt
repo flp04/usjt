@@ -1,0 +1,37 @@
+
+Requisitos obrigatórios:
+- Solução desktop com interface gráfica desenvolvida com o pacote javax.swing e banco de dados gerenciado pelo MySql
+- O sistema deve ter controle de acesso (autenticação)
+- Devem haver dois tipos de usuario: administradores e comuns:
+xzssssssssssss\-++++++++++++++++++++    - Administradores devem ter as funcionalidades:
+        cadastro de times (32 times)
+        criação de grupos (8 grupos com 4 times cada)
+        cadastro automático (com os times e grupos conforme sorteio oficial)
+        simular jogos (após o cadastro, sorteando dois números entre 0 e 3 para representar os gols de cada time)
+    - Usuarios comuns devem ter as funcionalidades:
+        visualização da lista de times cadastrados (sem a divisão de grupos)
+        visualização da lista de grupos cadastrados
+
+Copa do Mundo do Catar 2022
+32 times (classificados nas eliminatórias de seus respectivos continentes) distribuidos em 8 grupos, com quatro equipes cada, sorteados, considerando sua posição no Ranking Fifa.
+
+Requisitos Funcionais
+    - Cadastrar 32 times e criar 8 grupos com 4 destes times em cada
+    - Criar o cadastro automático com os times e grupos conforme sorteio oficial
+    - Simular o resultado dos jogos, sorteando dois números entre 0 e 3 para representar os gols de cada time
+    - Visualizar a lista de times cadastrados (sem a divisão de grupos)
+    - Visualizar a lista de grupos cadastrados
+
+Requisitos Não-Funcionais
+Requisitos Organizacionais
+    - Requisito de implementação: 
+        linguagem Java com interface gráfica desenvolvida com o pacote javax.swing
+    - Requisito de padrões:
+        deve ser utilizado programação orientada a objeto
+Requisitos Externos
+    - Requisito de interoperabilidade:
+        deve ter um banco de dados gerenciado pelo MySql
+    - Requisitos de segurança:
+        o sistema deve ter controle de acesso baseado em papéis (administrador e comum)
+
+*o administrador estará cadastrado na base de dados previamente

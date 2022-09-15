@@ -1,0 +1,130 @@
+Modelagem de Software
+    Edgard Luiz B. Valderramas
+
+MODELOS
+
+problemas computacionais
+
+caracteristicas e comportamentos (funcionalidades) que o software deverá prover (analise de requisitos)
+e planejamento de construção
+
+especificação de requisitos
+
+UML [Unified Modeling Language]
+
+tipos de software:
+    - sw básicou ou de sistema (BIOS, Interface Gráfica, S.O) - controladores, ferramentas de diagnóstico, carregadores e controladores
+    - sw utilitário: demandas específicas do mercado (editor de texto, planilhas eletronicas, antivirus)
+    - sw de linguagens de programação (compostos por compiladores (análise sintática e lexica), interpretadores, depuradores e ambientes IDE) 
+    - sw aplicativo: programas stand-alone. processados sem a necessidade de recursos de rede interna ou externa
+    - aplicações web: 
+    - sw de IA
+    - sw embutidos
+
+1990 - Tim Berners-Lee Hipertexto World Wide Web (hipertexto + TCP + Domain Name System)
+
+*códigos mnemonicos
+*sistemas legados = sistemas herdados
+*cientistas de dados/estatisticos
+
+SGBD (Sistemas Gerenciadores de Banco de Dados)
+
+1. O que é um SW para vc? Para que serve? Dê exemplos
+    um sistema desenvolvido para resolver um problema computacional que serve para atender os requisitos do usuario
+    windows, visual studio code, google chrome, duolingo 
+
+2. Pq vc acredita que seja importante a utilização de uma modelagem para o desenvolvimento de sw?
+    sim, desde para organizar a codificação e implementação, para garantir a manutenção e escalabilidade eficaz
+
+|requirement|
+Engenharia de Requisitos de Sistema: "O que o sistema deve fazer?" Caracteristicas/funcionalidades: Quais são as funcionalidades do software?
+
+    - Requisitos funcionais
+    - Requisitos não funcionais (restrição/qualidade/funcionalidade)
+
+    - de usuario: alto nível
+    - de sistema: baixo nível
+
+    -de negócios    
+
+    Taxinomia dos Requisitos não-Funcionais
+        *taxinomia: ramo da biologia responsável por descrever e nomear os seres vivos
+
+        MTBS (Mean Time Between Failures)
+
+    Autenticação
+
+        extração |elicitation| -> descobrir -> classificar -> priorizar -> documentar
+        análise
+        validação
+        gerenciamento
+
+arquitetura
+    - linguagem
+    - servidor de banco de dados
+    - servidor de aplicação
+
+'Automatizar um processo de negócios'
+
+happy path -> caminho feliz
+
+TCO (Total Cost Ownreship)
+
+
+modelo cascata - incremental iterativo (RUP)
+
+Analista de negócios: levantamento de requisitos    
+analista de sistemas: análise dos requisitos
+arquiteto de sistemas: projeto do sistema
+desenvolvedor: código e teste unitário
+testador: teste de sistema
+
+
+a engenharia de requisitos não é uma tarefa linear
+
+Especificação de requisitos -> estudo de vialbilidade -> elicitação de requisitos de usuario -> elicitação de requisitos de sistema -> especificação de requisitos de usuario -> especificação e modelagem dos requisitos de sistema -> prototipação -> revisões
+
+metodologia XGH (Xtreme Go Horse)
+
+Extração de requisitos -> Elicitar: listar, esclarecer, descobrir
+-> descobrir -> classificar -> priorizar -> documentar
+
+Machion = jnyzvrhplo
+
+Documentação de requisitos:
+    definição de requisitos: linguagem formal
+        ->importancia: obrigatórios e desejaveis
+        ->classificação: funcionais (RF), não funcionais (NRF), regras de negócios (RN: existem independente do sistema)
+    especificação de requisitos: linguagem técnica
+
+assumption
+
+Modelo de Software abstração do sistema 
+    aspectos: {
+        estruturais
+        comportamentais
+    }
+
+Engenharia de Requisitos: O que fazer?
+    -levantamento
+    -analise
+    -validação
+    -gerenciamento
+Projeto: Como fazer?
+Codificação: Fazer
+Testes: Validar
+implementação: Entrega
+
+Modelo Relacional
+    Entidade - Relacionamento
+Diagrama de Classes
+BD
+
+
+Booch
+OMT - Jacobson
+OOSE - Rumbaugh
+
+OMG
+    standards
+        UML
