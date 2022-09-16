@@ -3,7 +3,7 @@ Requisitos obrigatórios:
 - Solução desktop com interface gráfica desenvolvida com o pacote javax.swing e banco de dados gerenciado pelo MySql
 - O sistema deve ter controle de acesso (autenticação)
 - Devem haver dois tipos de usuario: administradores e comuns:
-xzssssssssssss\-++++++++++++++++++++    - Administradores devem ter as funcionalidades:
+- Administradores devem ter as funcionalidades:
         cadastro de times (32 times)
         criação de grupos (8 grupos com 4 times cada)
         cadastro automático (com os times e grupos conforme sorteio oficial)
@@ -35,3 +35,13 @@ Requisitos Externos
         o sistema deve ter controle de acesso baseado em papéis (administrador e comum)
 
 *o administrador estará cadastrado na base de dados previamente
+
+Regras de Negócio
+    - Pontuação por partida: vitória = 3 pontos, empate = 1 e derrota = 0
+    - Fase de Grupos: cada equipe joga contra todas de seu grupo em turno único.
+        As duas primeiras colocadas em pontuação classificam para a fase eliminatórias
+        Critérios desempate: saldo de gols, gols marcados...
+    - Fase eliminatória: oitavas, quartas, semi e final
+        o primeiro colocado joga contra o segundo colocado do grupo seguinte (AxB, CxD, ExF, GxH) num confronto único.
+        Em caso de empate vai para prorrogação, se o empate persistir vai para os penaltis.
+    - Há disputa do terceiro colocado

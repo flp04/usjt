@@ -127,4 +127,26 @@ OOSE - Rumbaugh
 
 OMG
     standards
-        UML
+        **UML**
+
+    Diagramas: estrutural e comportamental
+        classe, objetos, componentes, implantação, composição, pacote, casos de uso, sequencia, comunicação, atividade, estados, interação, tempo
+
+    Relacionamentos:
+        associação entre classes
+        generalização
+        dependência
+
+    Casos de uso: atores, casos de uso, relacionamentos
+
+POO - Programação Orientada a Objetos
+    Abstração
+    Encapsulamento
+        Visibilidade
+    Herança
+    Polimorfismo (varias formas)
+        Sobreposição
+
+Classe: nome de classes são representados por substantivos no singular
+
+Estado: valor naquele determinado instante
