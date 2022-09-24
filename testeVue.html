@@ -1,0 +1,27 @@
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<div id="app">
+    <input type="text" v-model="message">
+    <h1> {{ message }} </h1>
+    <button @click="getNomeCompleto()">Play</button>
+</div>
+
+<script>
+    const { createApp } = Vue
+
+    createApp({
+        data(){
+            return{
+                message: 'Filipe'
+            }
+        },
+        mounted(){
+            this.message = "Husak"
+        },
+        methods: {
+            getNomeCompleto(){
+                this.message = "Filipe Husak"
+            }
+        }
+    }).mount("#app")
+</script>
