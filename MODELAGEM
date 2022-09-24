@@ -79,7 +79,6 @@ arquiteto de sistemas: projeto do sistema
 desenvolvedor: código e teste unitário
 testador: teste de sistema
 
-
 a engenharia de requisitos não é uma tarefa linear
 
 Especificação de requisitos -> estudo de vialbilidade -> elicitação de requisitos de usuario -> elicitação de requisitos de sistema -> especificação de requisitos de usuario -> especificação e modelagem dos requisitos de sistema -> prototipação -> revisões
@@ -138,6 +137,29 @@ OMG
         dependência
 
     Casos de uso: atores, casos de uso, relacionamentos
+        Atores: Representam elementos externos ao sistema (podendo ser humano ou outro sistema). Eles interagem com o sistema
+        Casos de Uso: Representam uma funcionalidade do sistema e é iniciado por um ator ou outro caso de uso. (seu nome deve iniciar com um verbo)
+        Relacionamentos
+            Associação: indica que há uma interação
+            Generalização (herança): dois ou mais atores podem se comunicar com o mesmo caso de uso
+                Também pode haver generalização entre casos de uso, podendo o caso de uso filho se comportar de forma diferente do caso de uso pai
+            Dependência (Extensão* e Inclusão): variação do caso de uso base  (executado somente sob certas circunstâncias)
+                *caminho alternativo
+        Fronteira do Sistema: define os limites do sistema
+
+        Especificação de Casos de Uso
+            Nome
+            Descrição
+            Fluxo de Eventos
+                Fluxo Básico: iniciado pelo ator (como um dialogo entre o ator e o sistema)
+                Fluxos Alternativos: comportamentos alternativos (exceções ao fluxo principal, podendo ser tão extenso quanto necessário)
+                    SubFluxo Alternativo
+                Requisitos Especiais (normalmente um requisito não funcional específico, não explicado de maneira fácil)
+                Pré-condições (estado do sistema presente para execução)
+                Pós-condições (como o sistema deverá estar após a execução)
+                Pontos de Extensão
+
+            Glossario
 
 POO - Programação Orientada a Objetos
     Abstração
@@ -150,3 +172,10 @@ POO - Programação Orientada a Objetos
 Classe: nome de classes são representados por substantivos no singular
 
 Estado: valor naquele determinado instante
+
+Assinatura do método
+
+Estrutura de Dados
+
+
+UML Essencial. Fowler, Martin

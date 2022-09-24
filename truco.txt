@@ -1,0 +1,18 @@
+Um jogo de truco (de simples ou duplas) com a possibilidade de jogar com baralho limpo ou sujo
+
+Requisitos Funcionais
+    Entrar na mesa
+    Escolher simples ou duplas
+    Escolher baralho limpo ou sujo
+    Iniciar jogo
+    Embaralhar (?)
+    Distribuir cartas
+    Ver suas cartas
+    Jogar carta
+    Ver cartas jogadas na mesa
+    Esconder carta
+    Trucar
+    Correr
+    Calcular rodada
+    Ver pontuação
+    

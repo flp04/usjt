@@ -1,47 +1,48 @@
-
-Requisitos obrigatórios:
-- Solução desktop com interface gráfica desenvolvida com o pacote javax.swing e banco de dados gerenciado pelo MySql
-- O sistema deve ter controle de acesso (autenticação)
-- Devem haver dois tipos de usuario: administradores e comuns:
-- Administradores devem ter as funcionalidades:
-        cadastro de times (32 times)
-        criação de grupos (8 grupos com 4 times cada)
-        cadastro automático (com os times e grupos conforme sorteio oficial)
-        simular jogos (após o cadastro, sorteando dois números entre 0 e 3 para representar os gols de cada time)
-    - Usuarios comuns devem ter as funcionalidades:
-        visualização da lista de times cadastrados (sem a divisão de grupos)
-        visualização da lista de grupos cadastrados
-
-Copa do Mundo do Catar 2022
-32 times (classificados nas eliminatórias de seus respectivos continentes) distribuidos em 8 grupos, com quatro equipes cada, sorteados, considerando sua posição no Ranking Fifa.
-
 Requisitos Funcionais
-    - Cadastrar 32 times e criar 8 grupos com 4 destes times em cada
+    - Cadastrar times e criar grupos
     - Criar o cadastro automático com os times e grupos conforme sorteio oficial
     - Simular o resultado dos jogos, sorteando dois números entre 0 e 3 para representar os gols de cada time
     - Visualizar a lista de times cadastrados (sem a divisão de grupos)
     - Visualizar a lista de grupos cadastrados
+    - Visualizar o resultado dos jogos
+    - Visualizar chaveamento da fae eliminatória
 
 Requisitos Não-Funcionais
 Requisitos Organizacionais
     - Requisito de implementação: 
         linguagem Java com interface gráfica desenvolvida com o pacote javax.swing
     - Requisito de padrões:
-        deve ser utilizado programação orientada a objeto
+        programação orientada a objeto
 Requisitos Externos
     - Requisito de interoperabilidade:
-        deve ter um banco de dados gerenciado pelo MySql
+        banco de dados gerenciado pelo MySql
     - Requisitos de segurança:
-        o sistema deve ter controle de acesso baseado em papéis (administrador e comum)
+        controle de acesso baseado em papéis (administrador e comum)
 
 *o administrador estará cadastrado na base de dados previamente
 
 Regras de Negócio
-    - Pontuação por partida: vitória = 3 pontos, empate = 1 e derrota = 0
-    - Fase de Grupos: cada equipe joga contra todas de seu grupo em turno único.
-        As duas primeiras colocadas em pontuação classificam para a fase eliminatórias
-        Critérios desempate: saldo de gols, gols marcados...
-    - Fase eliminatória: oitavas, quartas, semi e final
-        o primeiro colocado joga contra o segundo colocado do grupo seguinte (AxB, CxD, ExF, GxH) num confronto único.
+    - Fase de Grupos: oito grupos com quatro equipes cada, que se enfrentam em turno único. As duas melhores colocadas por pontos se classificam para a fase eliminatória
+        *Pontuação por partida: vitória = 3, empate = 1 e derrota = 0
+        *Critérios desempate: saldo de gols, gols marcados e confronto direto (respectivamente)
+    - Fase eliminatória: (oitavas, quartas, semi e final)
+        o primeiro colocado joga contra o segundo colocado do conforme a tabela (AxB, CxD, ExF, GxH) num confronto único.
         Em caso de empate vai para prorrogação, se o empate persistir vai para os penaltis.
-    - Há disputa do terceiro colocado
+        *Há disputa do terceiro colocado
+
+Visualizar o resultado dos jogos (quem?)
+Visualizar chaveamento da fase eliminatória
+Bandeiras das seleções?
+
+Atores: Admin e Comum
+    Admin
+        - Cadastrar times
+        - Criar grupos
+        - Executar cadastro automático conforme sorteio oficial
+        - Simular resultado dos jogos
+    
+    Comum
+        - Visualizar a lista de times cadastrados (sem a divisão de grupos)
+        - Visualizar a lista de grupos cadastrados
+        - Visualizar o resultado dos jogos
+        - Visualizar chaveamento da fae eliminatória
