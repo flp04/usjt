@@ -168,6 +168,24 @@ POO - Programação Orientada a Objetos
     Herança
     Polimorfismo (varias formas)
         Sobreposição
+        Sobrecarga, sobreescrita e generics
+
+Cliente -> Servidor
+
+
+Diagrama de Classes
+    Classes
+    Relacionamento:
+        nome
+        sentido de leitura
+        navegabilidade (um ou outro sabe o quem te pertence, enquanto o outro ou um não sabe) Pessoa sabe seu Endereço, mas Endereço não sabe sua Pessoa
+        multiplicidade
+        papéis
+        tipo: Associação, Agregação, Composição: 'todo-parte', parte só pode fazer parte de um todo e seus tempo de vida coincidem, Generalização: herança dos comportamentos (super e subclasses) | polimorfismo e Dependência: alteração de um objeto pode afetar outro 
+    Relações entre classes
+
+
+Princípios fundamentais: alta coesão (cada elemento e responsabilidade dentro de sua classe) e baixo acoplamento
 
 Classe: nome de classes são representados por substantivos no singular
 
@@ -177,5 +195,104 @@ Assinatura do método
 
 Estrutura de Dados
 
+Dominio
 
 UML Essencial. Fowler, Martin
+sebesta Programação
+
+
+https://astah.net/products/free-student-license/
+
+Dado: fato do mundo real regisrado
+fatos conhecidos que possuem um signifcado implicito e podem ser registrados
+{
+    Simples: numeros, textos
+    Complexos: sons, imagens, sequencias
+
+    Temporario
+    Permanente
+}
+
+Para se tornar informação necessita de um contexto
+
+Piramide do conhecimento
+Inovação
+Sabedoria -> justificação
+Conhecimento -> interpretação
+Informação -> estruturação
+Dado -> medições/observações
+
+comma separetad values
+
+SGBD: Sistema Gerenciador de Banco de Dados {
+    armazenamento
+    backup
+    meios de controle
+    linguagem de consulta
+}
+Controle de concorrência
+
+Esquema externo -> Esquema conceitual -> Esquema físico
+(requisitos)
+
+Conceitual: descrição abstrata da base de dados
+Modelo lógico: visão do usuario programador
+Modelo físico
+
+SQL: Struture Query Language (Linguagem de Consulta Estruturada) [padrão ANSI]
+{
+    DDL: Data Definition Language: define o esquema de dados
+    DML: Data Manipulation Language: permite o acesso e manipulação
+    DCL: Data Control Language: define as permissões de uso
+
+}
+
+Mini-mundo(ou universo de discurso): dominio da aplicação
+Conjunto de conceitos usados 
+
+Modelo Entidade-Relacionamento (Peter Chen, 1976):
+    Representação com alto nível de abstração com objetivo de representar a semantica associada aos dados do minimundo. Seus conceitos são intuitivos, permitindo que projetistas criem o conceito sem qualquer uso de tecnologia
+
+    Entidade: algo do mundo real identificavel distintamente com existência independente. Possui atributos (podendo ser também compostos, multivalorados e identificadores)
+
+    Relacionamento: associação entre entidades, podendo ser do grau binario (duas entidades: empregado < trabalha > empresa) e ternario (tres entidades: fornecedor<fornece>peça<fornece>projeto) e recursiva (uma entidade: empregado><supervisiona)
+        >relacionamentos também podem ter atributos
+        Restrições: cardinalidade (máxima e minima)
+
+Diagrama Entidade-Relacionamento
+
+Arquitetura de 3 camadas
+PC -> App -> BD
+
+Arquitetura de 4 camadas
+Browser -> Servidor WEB -> MS -> BD
+
+Master Data Management
+redundância (inconsistente ou não)
+Meta-dados: dicionário de dados (dado dos dados)
+
+Usuarios do BD
+{
+    Administrador
+    Projetista
+    Programador
+    Usuario Final
+}
+
+Conceitual: quais dados e como eles se relacionam {
+    MER (DER: Diagrama Entidade Relacionamento)
+    OO (Diagrama de Classes)
+}
+Lógico {
+    Relacionais
+    Não relacionais
+}
+Físico
+
+Diagrama de interação: casos de uso
+Diagrama estrutural: classes
+Diagrama de dados: entidade-relacionamento
+
+Entidade associativa
+
+Sistema de Informação: um software multiusuario ligado a um banco de dados para processar informações

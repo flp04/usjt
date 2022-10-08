@@ -30,10 +30,6 @@ Regras de Negócio
         Em caso de empate vai para prorrogação, se o empate persistir vai para os penaltis.
         *Há disputa do terceiro colocado
 
-Visualizar o resultado dos jogos (quem?)
-Visualizar chaveamento da fase eliminatória
-Bandeiras das seleções?
-
 Atores: Admin e Comum
     Admin
         - Cadastrar times

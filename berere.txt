@@ -1,20 +1,3 @@
-Requisitos Funcionais {
-    Ver mesa (se há jogo ou não e número de participantes nela)
-    Entrar na mesa (se possível)
-    Escolher tipo de jogo (simples ou duplas)
-    Escolher tipo de baralho (limpo ou sujo)
-    Distribuir cartas
-    Ver próprias cartas
-    Jogar carta
-    Esconder carta jogada
-    Trucar
-    Correr
-    Calcular pontuação da rodada
-    Calcular vencedor da rodada
-    Definir quem é o pé
-    Deifinir quem inicia o jogo
-}
-
 Cliente
 Secretaria
 Médico-veterinário
