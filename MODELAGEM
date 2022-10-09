@@ -179,3 +179,19 @@ Estrutura de Dados
 
 
 UML Essencial. Fowler, Martin
+
+Conceitual: quais dados e como eles se relacionam {
+    MER (DER: Diagrama Entidade Relacionamento)
+    OO (Diagrama de Classes)
+}
+Lógico {
+    Relacionais
+    Não relacionais
+}
+Físico
+
+Diagrama de interação: casos de uso
+Diagrama estrutural: classes
+Diagrama de dados: entidade-relacionamento
+
+Entidade associativa
