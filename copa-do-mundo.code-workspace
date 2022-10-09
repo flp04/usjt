@@ -1,11 +1,7 @@
 {
-	"folders": [
-		{
-			"path": "../../vue/copa-do-mundo"
-		},
-		{
-			"path": ".."
-		}
-	],
-	"settings": {}
+    "folders": [
+        {
+            "path": "."
+        }
+    ]
 }
