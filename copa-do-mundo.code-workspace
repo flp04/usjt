@@ -2,6 +2,9 @@
     "folders": [
         {
             "path": "."
+        },
+        {
+            "path": "../../vue/copa-do-mundo"
         }
     ]
 }
