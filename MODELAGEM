@@ -10,7 +10,20 @@ e planejamento de construção
 
 especificação de requisitos
 
-UML [Unified Modeling Language]
+"Lei da parsimônia: reduzir tudo a sua essência para que a forma harmonize com a função." "Definir e projetar a arquitetura de um sistema é uma atividade criativa e produtiva." Cris Kobrin
+
+Processo de Desenvolvimento de Software
+    estilo em cascata subdivide o projeto com base nas atividades
+    estilo iterativo subdivide o projeto em subconjuntos de funcionalidade 
+modelo cascata - incremental iterativo (RUP)
+
+UML [Unified Modeling Language] |Linguagem de Modelagem Unificada|: "uma família de notações gráficas, apoiada por um metamodelo único"
+notação é o material gráfico que você vê nos modelos, a sintaxe gráfica da linguagem
+
+Usado como esboço (sendo sua essência a seletividade), projeto (tem como foco a completeza) e linguagem de programação
+
+Perspectiva de software, diz respeito a elementos de software, e perspectiva conceitual que representa a descrição dos conceitos do domínio de estudo
+
 
 tipos de software:
     - sw básicou ou de sistema (BIOS, Interface Gráfica, S.O) - controladores, ferramentas de diagnóstico, carregadores e controladores
@@ -69,9 +82,6 @@ arquitetura
 happy path -> caminho feliz
 
 TCO (Total Cost Ownreship)
-
-
-modelo cascata - incremental iterativo (RUP)
 
 Analista de negócios: levantamento de requisitos    
 analista de sistemas: análise dos requisitos
@@ -313,3 +323,22 @@ Diagrama estrutural: classes
 Diagrama de dados: entidade-relacionamento
 
 Entidade associativa
+
+
+Hierarquia de Herança de Classe{
+    Throwable{
+        Exception{
+            RunTimeException{
+                ClassCastException
+                ArrayIndexOutOfBoundsException
+                NullPointerException
+            }
+            IOException
+        }
+        Error{
+            AWT Error
+            Thread Death
+            OutOfMemory
+        }
+    }
+}
