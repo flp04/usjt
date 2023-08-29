@@ -1,0 +1,31 @@
+estruturas de dados: arranjos de dados na memória
+algoritmos: métodos para manipular dados
+
+    tempo de execução e consumo de memória
+
+consumo de memória
+escalabilidade: capacidade de se adaptar eficientemente com o aumento da demanda
+    (seja em termos de tráfego, armazenamento ou capacidade computacional)
+
+pilha: o primeiro colocado é o ultimo a ser retirado. só consigo inserir ou remover elementos no topo
+fila: FIFO first in, first out
+array: armazenam dados sequencialmente que podem ser acessados pelo indice
+árvore binária
+
+estrutura: acesso; busca; inserção, exclusão, implantação, memória
+
+*operações*
+inserção, busca, exclusão
+iteração
+ordenação
+recursão: quando uma função chama ela mesma
+
+OO: reaproveitamento de código
+    polimorfismo: uma mesma função com comportamentos diferentes em classes herdadadas, por exclusão
+
+Engenharia de Software:
+    especificação: propósito e requisitos
+    design: componentes e interação
+    verificação, codificação, teste, produção, manutenção
+
+uma variavel primitiva armazena um valor e outros tipos (objetos, estruturas complexas) armazenam referência
