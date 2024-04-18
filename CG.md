@@ -74,6 +74,14 @@ PCI: melhorar imagens na visão do usuario e criar algoritimos que imitem a vis�
 Amostragem corresponde a escolha de um conjunto de pontos dentro de um espaço real que irão compor as imagens digitais
 Quantização corresponde ao processo de atribuição de valores discretos para um sinal cuja amplitude varia entre valores finitos
 
+Uma imagem é uma matriz com valores representando a intensidade de luz de cada pixel ou ponto da matriz
+
+PDI: Processamento Digital de Imagens
+
+Computação gráfica: entra um conjunto de dados e sai uma imagem
+Visão Computacional: entra uma imagem e sai um conjunto de dados
+Processamento de dados: entra dados, sai dados
+Processamento de 
 ## COMPUTAÇÃO GRÁFICA
 "A computação gráfica é o ramo da ciência da computação que aplica tecnologias computacionais à produção e manipulação de representações visuais." 
 "A imagem digital é uma representação visual de uma imagem em uma região discreta, limitada através de um conjunto finito de valores inteiros que representam cada um dos seus pontos. O conteúdo destes pontos, também conhecidos por pixel (picture element), pode ser binário, monocromático ou colorido, conforme a necessidade da representação. Em uma imagem binária cada pixel tem apenas um bit, podendo estar ligado ou desligado. A monocromática contém 1 byte (8 bits), podendo representar 256 (2^8) tons de cinza. Uma imagem colorida é tipicamente representada por 4 bytes por pixel, cada qual usando as cores vermelho, verde e azul (RGB). Um byte quantifica a contribuição de cada um dos três componentes de cor naquele pixel, o quarto byte é utilizado na maioria das vezes para opacidade (transparência), podendo também ser utilizado para outros efeitos e filtros."Uma imagem pode ser unidimensional, bidimensional ou tridimensional."

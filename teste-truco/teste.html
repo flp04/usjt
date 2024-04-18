@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Socket.IO chat</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px; /* Espaçamento entre as células */
+        height: 300px; /* Ajuste conforme necessário */
+      }
+
+      .top-center {
+        grid-column: 1 / span 2;
+        justify-self: center;
+        display: flex;
+      }
+      
+      .left-center {
+        justify-self: start;
+        display: flex;
+      }
+      
+      .right-center {
+        justify-self: end;
+        display: flex;
+      }
+      
+      .bottom-center {
+        grid-column: 1 / span 2;
+        justify-self: center;
+        display: flex;
+      }
+
+      .carta {
+        width: 80px;
+        height: 150px;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 10px;
+      }
+
+    </style>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <div><strong>Manilha: </strong><span id="manilha">Carta</span></div>
+
+    <div class="container">
+      <div id="bot0" class="jogador top-center">
+        <div class="carta"></div>
+        <div class="carta"></div>
+        <div class="carta"></div>
+      </div>
+      <div id="bot1" class="jogador left-center">
+        <div class="carta"></div>
+        <div class="carta"></div>
+        <div class="carta"></div>
+      </div>
+      <div id="bot2" class="jogador right-center">
+        <div class="carta"></div>
+        <div class="carta"></div>
+        <div class="carta"></div>
+      </div>
+      <div id="jogador" class="jogador bottom-center">
+        <div class="carta"></div>
+        <div class="carta"></div>
+        <div class="carta"></div>
+      </div>
+    </div>
+    <script>
+      const socket = io();
+
+      const jogadores = document.getElementsByClassName('jogador')
+
+      socket.on('entrou', (mesa) => {
+        for (let i = 0; i < 4; i++) {
+          for (let j = 0; j < 3; j++) {
+            jogadores[i].children[j].textContent = `${mesa.jogadores[i].mao[j].valor} de ${mesa.jogadores[i].mao[j].naipe}`
+          }
+        }
+        let manilha = document.getElementById('manilha')
+        manilha.textContent = `${mesa.baralho[0].valor} de ${mesa.baralho[0].naipe}`
+      });
+    </script>
+  </body>
+</html>
