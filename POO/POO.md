@@ -7,6 +7,7 @@ Orientação a objetos é um paradigma de programação baseado no conceito de o
 Um paradigma de programação é o conjunto de caracteristicas que definem como a linguagem de programação funciona e resolve os problemas. São frequentemente diferenciados pelo que as técnicas permitem ou proíbem, com o intuito de construir um código legível e organizado, afim de aumentar a produtividade do desenvolvedor.
 
 **Programação imperativa**
+O programa é escrito como uma sequência de comandos que alteram seu estado. O programador instrui a máquina sobre como devem os processos devem ser computados. O nome está ligado ao tempo verbal da linguagem natural, onde o modo imperativo é usado para fazer um pedido ou emitir uma ordem. O fundamento da programação imperativa é o conceito da Máquina de Turing e seu conjunto de funções computáveis. 
 
 **Progrmação declarativa**
 

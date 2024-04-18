@@ -7,9 +7,34 @@ Visualiação: cópia, transformações, identificar sobreposição
 Renderização: 
 Representação matricial
 Representação vetorial
+Estruturas básicas: Pontos, linhas, curvas
+Polígonos
+
+Vetor é uma entidade geométrica definida por uma direção e um deslocamento. Diferente dos pontos, não está relacionado com uma posição fixa no espaço. Ele expressa a magnitude ou módulo (tamanho), a direçao (declividade) e o sentido do deslocamento (indicado por uma seta).Pode ser definido por dois pontos, uma origem e uma extremidade
+
+Identificar colisões
+
+Renderização
+Primeiro cria a tela (cena) e depois todos os objetos
+
+O quanto queremos entregar de realismo
+
+OpenGL
+GL (Graphics Library): primitivas geométricas e gráficas pelo controle de atributos
+GLU (Graphics Utility Library): funções para criação de objetos mais complexos
+GLUT (GL Utility Toolkit): funções para comunicação com sistema de janelas (eventos)
+
+cada primitiva é formada por agrupamentos de vértices
+
+Modelos + Equações + Algoritmo = Imagem
 
 Viés em performance, buscando usar formas simples para composição e elementos complexos. com 
 
+Três canais de cor (R, G, B)
+
+Pontos -> Poligono -> Malha (mesh)
+
+Low poly, High poly
 
 Três grandes áreas: Computação Gráfica (síntese de imagens) (dados geram imagens), Processamento de Imagens (imagens geram imagens) e Visão Computacional (imagens geram dados)
 
@@ -18,6 +43,36 @@ Para alterar o brilho da imagem multiplica cada elemento de cor pelo valor desej
 Visualização 2D
  -> Modelo (estrutura de dados) -> Visualização 2D -> Imagem 
  -> Instanciamento, Recorte e Mapeamento
+
+Representação: matricial ou vetorial (menor custo de armazenamento)
+
+Dispositivos: quanto a finalidade dispositivos de entrada e saída e quanto ao formato dos dados dispositivos matriciais ou vetoriais
+
+Processamento de IMG: aquisição -> processamento <- armazenamento -> saída 
+-> aquisição
+-> filtragem e realce
+-> restauração
+-> compressão
+-> processo morfológico
+-> segmentação
+-> representação e descrição
+-> reconhecimento de objetos
+
+Filtros: melhorar a imagem (de vários pontos de vista), através da
+-> ampliação do contraste
+-> eliminação de padrões periódicos ou aleatórios
+-> melhora no foco e acentuação de características
+
+kernel/template/mascara
+
+A imagem monocromática é uma função bidimensional contínua f(x,y), na qual x e y são coordenadas espaciais e o valor de f em qualquer ponto(x,y) é proporcional a intensidade luminosa do ponto
+
+Histograma traduz uma imagem de forma estatistica em relação a intensidade de seus pontos
+
+PCI: melhorar imagens na visão do usuario e criar algoritimos que imitem a visão humana para automatizar processos como classificação, reconhecimento e segmentação de imagens
+
+Amostragem corresponde a escolha de um conjunto de pontos dentro de um espaço real que irão compor as imagens digitais
+Quantização corresponde ao processo de atribuição de valores discretos para um sinal cuja amplitude varia entre valores finitos
 
 ## COMPUTAÇÃO GRÁFICA
 "A computação gráfica é o ramo da ciência da computação que aplica tecnologias computacionais à produção e manipulação de representações visuais." 
